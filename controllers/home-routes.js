@@ -10,8 +10,8 @@ router.get('/', async (req, res) => {
                     attributes: ['blog_title', 'date_created']
                 },
             ],
-        }),
-        res.render(dbBlogData)
+        })
+        res.status(200).json(dbBlogData)
         // const blogHome = dbBlogData.map((blog) =>
         //   blog.get({ plain: true })
         // )
