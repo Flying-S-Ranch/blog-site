@@ -3,7 +3,7 @@ const seedBlog = require('./blogData');
 
 const seedAll = async () => {
     await sequelize.sync({ force: true });
-    await seedBlog
+    await seedBlog();
     process.exit(0);
 };
 
