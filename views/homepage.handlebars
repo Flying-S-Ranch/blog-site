@@ -1,0 +1,12 @@
+<header>
+    <h1>A Blog About Tech</h1>
+    <nav>
+        <a href="/">Home</a>
+        {{#if loggedIn}} 
+        <button>Log Out</button>
+        <a href="/dashboard">Dashboard</a>
+        {{else}} 
+        <a href="/login">Log In</a>
+        {{/if}} 
+    </nav>
+</header>
